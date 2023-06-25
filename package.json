@@ -1,0 +1,29 @@
+{
+  "name": "gen-json-schemas",
+  "version": "1.0.0",
+  "description": "A Javascript package to generate JSON schemas dynamically",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anmol-fzr/gen-JSON-schemas.git#main"
+  },
+  "keywords": [
+    "json-schema-generator",
+    "npm",
+    "schema",
+    "seo",
+    "json"
+  ],
+  "author": "Anmol",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/anmol-fzr/gen-JSON-schemas/issues"
+  },
+  "homepage": "https://github.com/anmol-fzr/gen-JSON-schemas/tree/main#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
+}
