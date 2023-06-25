@@ -1,6 +1,6 @@
 {
   "name": "gen-json-schemas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Javascript package to generate JSON schemas dynamically",
   "main": "dist/index.js",
   "scripts": {
