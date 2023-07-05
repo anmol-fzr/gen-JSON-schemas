@@ -1,12 +1,4 @@
-import SchemaI from "./Schema";
-
-const ticketAvailability = {
-  inStock: "InStock",
-  soldOut: "SoldOut",
-  preOrder: "PreOrder",
-};
-
-export const currencies = {
+const currencies = {
   ADA: "Cardano",
   AED: "United Arab Emirates Dirham",
   AFN: "Afghan afghani",
@@ -187,52 +179,8 @@ export const currencies = {
   ZAR: "South African rand",
   ZMK: "Zambian kwacha",
   ZMW: "Zambian Kwacha",
-  ZWL: "Zimbabwean Dollar",
-};
-
-const eventStatus = [
-  "EventScheduled",
-  "EventPostponed",
-  "EventCancelled",
-  "EventMovedOnline",
-];
-
-const attendanceModes = {
-  offline: "OfflineEventAttendanceMode",
-  online: "OnlineEventAttendanceMode",
-  mixed: "MixedEventAttendanceMode",
-};
-
-const performType = [
-  "Person",
-  "PerformingGroup",
-  "MusicGroup",
-  "DanceGroup",
-  "TheaterGroup",
-];
-
-interface EventI extends SchemaI {
-  name: string;
-  description: string;
-  image: string;
-  startDate: string;
-  endDate: string;
-  eventStatus: `https://schema.org/${(typeof eventStatus)[number]}`;
-  performer: ProformerI;
-  offers: OfferI;
+  ZWL: "Zimbabwean Dollar"
 }
 
-interface ProformerI {
-  "@type": (typeof performType)[number];
-  name: string;
-}
 
-interface OfferI {
-  "@type": "Offer";
-  name: string;
-  price: string;
-  priceCurrency: keyof typeof currencies;
-  validFrom: string;
-  url: string;
-  availability: `https://schema.org/${keyof typeof ticketAvailability}`;
-}
+export defa

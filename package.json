@@ -1,6 +1,6 @@
 {
   "name": "gen-json-schemas",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A Javascript package to generate JSON schemas dynamically",
   "main": "dist/index.js",
   "scripts": {
@@ -25,5 +25,8 @@
   "homepage": "https://github.com/anmol-fzr/gen-JSON-schemas/tree/main#readme",
   "devDependencies": {
     "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "change-case": "^4.1.2"
   }
 }
